@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header, footer {
+    background-color: #252e39;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    justify-content: space-between;
+}
+
+h1, nav ul li {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul, .dalsi_akce ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li, .dalsi_akce ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li:last-child, .dalsi_akce ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a, .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: inline-block;
+    background-color: #3c4858;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #2d3748;
+    color: black;
+}
+
+main {
+    flex: 1;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dalsi_akce, .copyright, .cookies {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.dalsi_akce p {
+    margin-right: 5px;
+}
+
+footer {
+    line-height: 0;
+    padding: 10px; 
+}
